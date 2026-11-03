@@ -12,6 +12,11 @@ app.get('/', (req, res) => {
 const postsRouter = require('./routers/posts');
 app.use('/posts', postsRouter);
 
+const notFound = require('./middlewares/notFound');
+const errorHandler = require('./middlewares/errorHandler');
+app.use(notFound);
+app.use(errorHandler);
+
 app.listen(port, () => {
   console.log(`Server in ascolto su http://localhost:${port}`);
 });

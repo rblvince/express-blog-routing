@@ -27,10 +27,24 @@
       }
     },
     {
-      "name": "GET /posts/1",
+      "name": "GET /posts/1 (Show)",
       "request": {
         "method": "GET",
         "url": "{{baseUrl}}/posts/1"
+      }
+    },
+    {
+      "name": "GET /posts/9999 (Show inesistente)",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/posts/9999"
+      }
+    },
+    {
+      "name": "GET /posts/abc (Show id non valido)",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/posts/abc"
       }
     },
     {
@@ -48,10 +62,31 @@
       }
     },
     {
-      "name": "DELETE /posts/1",
+      "name": "PUT /posts/abc (Update id non valido)",
+      "request": {
+        "method": "PUT",
+        "url": "{{baseUrl}}/posts/abc"
+      }
+    },
+    {
+      "name": "DELETE /posts/1 (Delete)",
       "request": {
         "method": "DELETE",
         "url": "{{baseUrl}}/posts/1"
+      }
+    },
+    {
+      "name": "DELETE /posts/abc (Delete id non valido)",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/posts/abc"
+      }
+    },
+    {
+      "name": "GET endpoint inesistente",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/endpoint-inesistente"
       }
     }
   ],
