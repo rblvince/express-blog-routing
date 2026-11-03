@@ -2,6 +2,12 @@ const express = require('express');
 
 const router = express.Router();
 
+// Imposta il tipo di contenuto testuale per tutte le risposte del router.
+router.use((req, res, next) => {
+  res.type('text/plain');
+  next();
+});
+
 // Index
 router.get('/', (req, res) => {
   res.send('Lista dei post');
