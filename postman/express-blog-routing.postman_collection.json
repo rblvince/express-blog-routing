@@ -1,0 +1,65 @@
+{
+  "info": {
+    "name": "Express Blog Routing",
+    "description": "Collection per verificare le rotte dell'esercizio Boolean Express Blog Routing.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/"
+      }
+    },
+    {
+      "name": "GET /test.html",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/test.html"
+      }
+    },
+    {
+      "name": "GET /posts",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/posts"
+      }
+    },
+    {
+      "name": "GET /posts/1",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/posts/1"
+      }
+    },
+    {
+      "name": "POST /posts",
+      "request": {
+        "method": "POST",
+        "url": "{{baseUrl}}/posts"
+      }
+    },
+    {
+      "name": "PUT /posts/1",
+      "request": {
+        "method": "PUT",
+        "url": "{{baseUrl}}/posts/1"
+      }
+    },
+    {
+      "name": "DELETE /posts/1",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/posts/1"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}
